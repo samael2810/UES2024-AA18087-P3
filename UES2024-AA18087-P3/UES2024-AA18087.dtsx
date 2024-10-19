@@ -1,0 +1,2667 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/19/2024 5:12:41 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-KKRRMEHH"
+  DTS:CreatorName="LAPTOP-KKRRMEHH\Samael"
+  DTS:DTSID="{CC03E127-B8B9-42E7-84B2-F6196FC88042}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="2058"
+  DTS:ObjectName="UES2024-AA18087"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{B275998C-E04A-46C7-BD88-E491B13DEE36}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Data2018]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{808D841E-206D-40E3-ACD2-FD8FDD0FFD57}"
+      DTS:ObjectName="Data2018">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2058"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Samael\Downloads\archive\Combined_Flights_2018.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FlightDate"
+              DTS:DTSID="{4B1CEC46-ECF6-4914-9FED-F37A8AE1CF95}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Airline"
+              DTS:DTSID="{E64F4FEA-4E15-45D7-82CA-858D01F3B24E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Origin"
+              DTS:DTSID="{83EDFFF8-38C9-4FBF-8B2E-9267E070FBA3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Dest"
+              DTS:DTSID="{03D3996F-6444-4E98-8A21-4AFBCAFFC8C1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cancelled"
+              DTS:DTSID="{C56E83B9-A928-4CB6-B8C7-455CF144042D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Diverted"
+              DTS:DTSID="{DDDF8F70-1C54-492D-8098-36428A3A46BE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CRSDepTime"
+              DTS:DTSID="{A07C06A2-2FE6-476F-859D-558B22DF3797}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DepTime"
+              DTS:DTSID="{D38E721F-48CD-4DB7-8FDC-08F7FF109239}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DepDelayMinutes"
+              DTS:DTSID="{8F82DAF1-C35C-44E0-B194-8BAA0A815B65}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DepDelay"
+              DTS:DTSID="{DC39BF0C-E49F-4F76-B09E-2C5B93DFA5F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ArrTime"
+              DTS:DTSID="{7041FC96-F2CB-4FFF-A247-6287D0D19414}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ArrDelayMinutes"
+              DTS:DTSID="{C4F449A4-E00E-40CB-97CD-76FE8C899808}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AirTime"
+              DTS:DTSID="{59C7AF7D-EE4F-4321-BEE8-169E1F951F23}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CRSElapsedTime"
+              DTS:DTSID="{F40C3423-E45C-472C-A212-6B460EFB5E1B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ActualElapsedTime"
+              DTS:DTSID="{81E40CF0-AE7F-409C-ABA9-4E31F4EB2D7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Distance"
+              DTS:DTSID="{3736F42F-09CA-48A3-A96D-2A2E13B9C0FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{1E8B0D58-B35E-4835-8F5C-EE073A327B45}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Quarter"
+              DTS:DTSID="{A7335318-D285-4B53-9A13-8ABEEC5A211D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Month"
+              DTS:DTSID="{A642F26F-98D7-4EF5-94E7-7123CA49F630}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DayofMonth"
+              DTS:DTSID="{38D17144-CD8F-4CDE-9E26-7AF9BB661115}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DayOfWeek"
+              DTS:DTSID="{1FE9028F-8656-4B27-AC40-8329B85D95E1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Marketing_Airline_Network"
+              DTS:DTSID="{2C15279B-EC68-4733-9284-FCF5E49BEAD5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Operated_or_Branded_Code_Share_Partners"
+              DTS:DTSID="{3461CFF8-81F9-4893-B452-A1C45EB3B561}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DOT_ID_Marketing_Airline"
+              DTS:DTSID="{11D39B44-CCBC-45AB-A61B-F301C95C3F05}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IATA_Code_Marketing_Airline"
+              DTS:DTSID="{44A19446-A1D4-46EF-92A2-8A7BFB47DB13}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flight_Number_Marketing_Airline"
+              DTS:DTSID="{BA391CE5-66F1-4153-8CBB-34A2E9ED507C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Operating_Airline"
+              DTS:DTSID="{620305B3-CCE8-4B57-9D79-C2A14F70E573}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DOT_ID_Operating_Airline"
+              DTS:DTSID="{2EE887F4-327A-4CB2-B4DB-08ECCBD4522D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IATA_Code_Operating_Airline"
+              DTS:DTSID="{D03E034A-7E2E-4950-956F-EB0F3ED190E1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tail_Number"
+              DTS:DTSID="{B34F3A83-2435-437E-9887-C439E11B384C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flight_Number_Operating_Airline"
+              DTS:DTSID="{B5862598-E6A1-40E3-988D-0420EE020386}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OriginAirportID"
+              DTS:DTSID="{64FBFC12-F93C-464C-8365-9A300DCE7FD0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OriginAirportSeqID"
+              DTS:DTSID="{48BDB23F-4743-403E-B0D8-FB368F9C2916}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OriginCityMarketID"
+              DTS:DTSID="{EB885965-757C-4033-9CC6-39B1842F9224}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OriginCityName"
+              DTS:DTSID="{229DC68C-A644-4870-AD8D-BA1EB3DE8B5A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OriginState"
+              DTS:DTSID="{92DE05F2-1C43-46DA-A848-0217937C5B61}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OriginStateFips"
+              DTS:DTSID="{1F921439-31C6-4D97-8980-DCCB179D6D92}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OriginStateName"
+              DTS:DTSID="{B6949FD8-BEC6-411E-8A67-FDD366606880}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OriginWac"
+              DTS:DTSID="{3A89525A-64B8-448F-A4B6-01AA504F4726}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DestAirportID"
+              DTS:DTSID="{6E5352A3-1C2C-4EF4-8D7E-539324BC1DC0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DestAirportSeqID"
+              DTS:DTSID="{3E5A5EFC-096A-4ADC-87E6-E070972A1FC4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DestCityMarketID"
+              DTS:DTSID="{1A7BDCB0-B68A-48A4-A613-903244129223}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DestCityName"
+              DTS:DTSID="{076E9FD9-35EC-4588-920B-93B3E98FE637}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DestState"
+              DTS:DTSID="{1646A795-3CF0-42E8-911C-113BA7AA4724}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DestStateFips"
+              DTS:DTSID="{F63BB4C7-A684-4916-8094-2013F005687A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DestStateName"
+              DTS:DTSID="{C3A838B6-ECD6-4287-A635-0CD0858A1128}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DestWac"
+              DTS:DTSID="{D39AABAB-0D5C-4AF1-AF31-FA0996FD6CE1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DepDel15"
+              DTS:DTSID="{02DB8C86-9AC5-425C-B018-E9ADEA10EDAB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DepartureDelayGroups"
+              DTS:DTSID="{C3767B95-DB20-40C1-B41B-AB4D15535F12}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DepTimeBlk"
+              DTS:DTSID="{D672F859-07CC-4776-B6EE-C9AF5CC0AAA1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TaxiOut"
+              DTS:DTSID="{9A293B26-2EAB-4706-A8FD-2F73396D2328}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WheelsOff"
+              DTS:DTSID="{2886BDCC-4FFA-454C-9D2C-4E4285258F4C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WheelsOn"
+              DTS:DTSID="{1D7AE063-BE1B-426C-9907-E13A1CBF3BE8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TaxiIn"
+              DTS:DTSID="{F12357C5-9BFA-4DD6-BEB2-E6706EE29A05}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CRSArrTime"
+              DTS:DTSID="{493E0EA5-387B-4B66-AD2A-387969DFD7EE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ArrDelay"
+              DTS:DTSID="{C5E961DA-DE50-48F2-B5A3-A95A6D963D59}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ArrDel15"
+              DTS:DTSID="{4F3D5550-0E35-45E7-8353-8DA3301B664E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ArrivalDelayGroups"
+              DTS:DTSID="{9F7B6774-D007-42A4-B34F-00370CD2B5F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ArrTimeBlk"
+              DTS:DTSID="{AF34B3E4-FD44-45D4-AB84-8E1467718B21}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DistanceGroup"
+              DTS:DTSID="{FCF3280F-0EE3-4506-A756-0B74C14996A4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DivAirportLandings"
+              DTS:DTSID="{82E21A01-7D62-4B5E-8EE3-C2545C2D5812}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DW_AA18087_PARCIAL3]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{9D1EA20E-CCEB-465C-9DD1-20F1356DDFCE}"
+      DTS:ObjectName="DW_AA18087_PARCIAL3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=DW_AA18087_PARCIAL3;Integrated Security=True;Application Name=SSIS-UES2024-AA18087-{9D1EA20E-CCEB-465C-9DD1-20F1356DDFCE}localhost.DW_AA18087_PARCIAL3;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Ejecutar SQL"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{191C4891-8689-4864-B2E3-BE90F9578D61}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Ejecutar SQL"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{9D1EA20E-CCEB-465C-9DD1-20F1356DDFCE}"
+          SQLTask:SqlStatementSource="-- Limpiamos las dimensiones y Reiniciamos las claves autonumericas&#xA;delete Dim_Aerolinea&#xA;dbcc checkident('Dim_Aerolinea', RESEED, 0);&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Flujo de datos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{91ED812C-C5BE-48F0-8837-46671A567762}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Flujo de datos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Tarea Flujo de datos\Destino de ADO NET"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="Destino de ADO NET"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."Dim_Aerolinea"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Destino de ADO NET.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DW_AA18087_PARCIAL3]"
+                  connectionManagerRefId="Package.ConnectionManagers[DW_AA18087_PARCIAL3]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Marketing_Airline_Network]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Marketing_Airline_Network"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Marketing_Airline_Network]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Marketing_Airline_Network]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[IATA_Code_Marketing_Airline]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="IATA_Code_Marketing_Airline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[IATA_Code_Marketing_Airline]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IATA_Code_Marketing_Airline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Operating_Airline]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Operating_Airline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Operating_Airline]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Operating_Airline]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[IATA_Code_Operating_Airline]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="IATA_Code_Operating_Airline"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[IATA_Code_Operating_Airline]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IATA_Code_Operating_Airline]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[AerolineaID]"
+                      dataType="i4"
+                      name="AerolineaID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Marketing_Airline_Network]"
+                      dataType="wstr"
+                      length="50"
+                      name="Marketing_Airline_Network" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[IATA_Code_Marketing_Airline]"
+                      dataType="wstr"
+                      length="10"
+                      name="IATA_Code_Marketing_Airline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Operating_Airline]"
+                      dataType="wstr"
+                      length="50"
+                      name="Operating_Airline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[IATA_Code_Operating_Airline]"
+                      dataType="wstr"
+                      length="10"
+                      name="IATA_Code_Operating_Airline" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Destino de ADO NET.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Origen de archivo plano"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="2058"
+              name="Origen de archivo plano"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Origen de archivo plano.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Data2018]"
+                  connectionManagerRefId="Package.ConnectionManagers[Data2018]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[FlightDate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[FlightDate]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[FlightDate]"
+                      name="FlightDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Airline]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Airline]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Airline]"
+                      name="Airline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Origin]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Origin]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Origin]"
+                      name="Origin"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Dest]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Dest]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Dest]"
+                      name="Dest"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Cancelled]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Cancelled]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Cancelled]"
+                      name="Cancelled"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Diverted]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Diverted]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Diverted]"
+                      name="Diverted"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CRSDepTime]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CRSDepTime]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CRSDepTime]"
+                      name="CRSDepTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepTime]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepTime]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepTime]"
+                      name="DepTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepDelayMinutes]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepDelayMinutes]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepDelayMinutes]"
+                      name="DepDelayMinutes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepDelay]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepDelay]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepDelay]"
+                      name="DepDelay"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrTime]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrTime]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrTime]"
+                      name="ArrTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrDelayMinutes]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrDelayMinutes]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrDelayMinutes]"
+                      name="ArrDelayMinutes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[AirTime]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[AirTime]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[AirTime]"
+                      name="AirTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CRSElapsedTime]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CRSElapsedTime]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CRSElapsedTime]"
+                      name="CRSElapsedTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ActualElapsedTime]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ActualElapsedTime]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ActualElapsedTime]"
+                      name="ActualElapsedTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Distance]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Distance]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Distance]"
+                      name="Distance"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Year]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Year]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Quarter]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Quarter]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Quarter]"
+                      name="Quarter"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Month]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Month]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Month]"
+                      name="Month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DayofMonth]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DayofMonth]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DayofMonth]"
+                      name="DayofMonth"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DayOfWeek]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DayOfWeek]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DayOfWeek]"
+                      name="DayOfWeek"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Marketing_Airline_Network]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Marketing_Airline_Network]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Marketing_Airline_Network]"
+                      name="Marketing_Airline_Network"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Operated_or_Branded_Code_Share_Partners]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Operated_or_Branded_Code_Share_Partners]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Operated_or_Branded_Code_Share_Partners]"
+                      name="Operated_or_Branded_Code_Share_Partners"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DOT_ID_Marketing_Airline]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DOT_ID_Marketing_Airline]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DOT_ID_Marketing_Airline]"
+                      name="DOT_ID_Marketing_Airline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IATA_Code_Marketing_Airline]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[IATA_Code_Marketing_Airline]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IATA_Code_Marketing_Airline]"
+                      name="IATA_Code_Marketing_Airline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Flight_Number_Marketing_Airline]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Flight_Number_Marketing_Airline]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Flight_Number_Marketing_Airline]"
+                      name="Flight_Number_Marketing_Airline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Operating_Airline]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Operating_Airline]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Operating_Airline]"
+                      name="Operating_Airline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DOT_ID_Operating_Airline]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DOT_ID_Operating_Airline]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DOT_ID_Operating_Airline]"
+                      name="DOT_ID_Operating_Airline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IATA_Code_Operating_Airline]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[IATA_Code_Operating_Airline]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IATA_Code_Operating_Airline]"
+                      name="IATA_Code_Operating_Airline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Tail_Number]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Tail_Number]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Tail_Number]"
+                      name="Tail_Number"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Flight_Number_Operating_Airline]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Flight_Number_Operating_Airline]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Flight_Number_Operating_Airline]"
+                      name="Flight_Number_Operating_Airline"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginAirportID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginAirportID]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginAirportID]"
+                      name="OriginAirportID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginAirportSeqID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginAirportSeqID]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginAirportSeqID]"
+                      name="OriginAirportSeqID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginCityMarketID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginCityMarketID]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginCityMarketID]"
+                      name="OriginCityMarketID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginCityName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginCityName]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginCityName]"
+                      name="OriginCityName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginState]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginState]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginState]"
+                      name="OriginState"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginStateFips]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginStateFips]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginStateFips]"
+                      name="OriginStateFips"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginStateName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginStateName]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginStateName]"
+                      name="OriginStateName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginWac]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginWac]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OriginWac]"
+                      name="OriginWac"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestAirportID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestAirportID]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestAirportID]"
+                      name="DestAirportID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestAirportSeqID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestAirportSeqID]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestAirportSeqID]"
+                      name="DestAirportSeqID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestCityMarketID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestCityMarketID]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestCityMarketID]"
+                      name="DestCityMarketID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestCityName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestCityName]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestCityName]"
+                      name="DestCityName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestState]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestState]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestState]"
+                      name="DestState"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestStateFips]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestStateFips]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestStateFips]"
+                      name="DestStateFips"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestStateName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestStateName]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestStateName]"
+                      name="DestStateName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestWac]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestWac]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DestWac]"
+                      name="DestWac"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepDel15]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepDel15]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepDel15]"
+                      name="DepDel15"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepartureDelayGroups]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepartureDelayGroups]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepartureDelayGroups]"
+                      name="DepartureDelayGroups"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepTimeBlk]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepTimeBlk]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DepTimeBlk]"
+                      name="DepTimeBlk"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[TaxiOut]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[TaxiOut]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[TaxiOut]"
+                      name="TaxiOut"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[WheelsOff]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[WheelsOff]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[WheelsOff]"
+                      name="WheelsOff"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[WheelsOn]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[WheelsOn]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[WheelsOn]"
+                      name="WheelsOn"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[TaxiIn]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[TaxiIn]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[TaxiIn]"
+                      name="TaxiIn"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CRSArrTime]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CRSArrTime]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CRSArrTime]"
+                      name="CRSArrTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrDelay]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrDelay]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrDelay]"
+                      name="ArrDelay"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrDel15]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrDel15]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrDel15]"
+                      name="ArrDel15"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrivalDelayGroups]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrivalDelayGroups]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrivalDelayGroups]"
+                      name="ArrivalDelayGroups"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrTimeBlk]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrTimeBlk]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ArrTimeBlk]"
+                      name="ArrTimeBlk"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DistanceGroup]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DistanceGroup]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DistanceGroup]"
+                      name="DistanceGroup"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DivAirportLandings]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DivAirportLandings]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[DivAirportLandings]"
+                      name="DivAirportLandings"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[FlightDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FlightDate" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Airline]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Airline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Origin]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Origin" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Dest]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Dest" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Cancelled]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Cancelled" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Diverted]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Diverted" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CRSDepTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CRSDepTime" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DepTime" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepDelayMinutes]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DepDelayMinutes" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepDelay]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DepDelay" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ArrTime" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrDelayMinutes]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ArrDelayMinutes" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[AirTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="AirTime" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CRSElapsedTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CRSElapsedTime" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ActualElapsedTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ActualElapsedTime" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Distance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Distance" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Year]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Quarter]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Quarter" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Month]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Month" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DayofMonth]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DayofMonth" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DayOfWeek]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DayOfWeek" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Marketing_Airline_Network]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Marketing_Airline_Network" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Operated_or_Branded_Code_Share_Partners]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Operated_or_Branded_Code_Share_Partners" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DOT_ID_Marketing_Airline]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DOT_ID_Marketing_Airline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[IATA_Code_Marketing_Airline]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="IATA_Code_Marketing_Airline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Flight_Number_Marketing_Airline]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Flight_Number_Marketing_Airline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Operating_Airline]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Operating_Airline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DOT_ID_Operating_Airline]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DOT_ID_Operating_Airline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[IATA_Code_Operating_Airline]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="IATA_Code_Operating_Airline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Tail_Number]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Tail_Number" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Flight_Number_Operating_Airline]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Flight_Number_Operating_Airline" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginAirportID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="OriginAirportID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginAirportSeqID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="OriginAirportSeqID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginCityMarketID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="OriginCityMarketID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginCityName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="OriginCityName" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginState]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="OriginState" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginStateFips]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="OriginStateFips" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginStateName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="OriginStateName" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OriginWac]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="OriginWac" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestAirportID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DestAirportID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestAirportSeqID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DestAirportSeqID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestCityMarketID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DestCityMarketID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestCityName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DestCityName" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestState]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DestState" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestStateFips]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DestStateFips" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestStateName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DestStateName" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DestWac]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DestWac" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepDel15]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DepDel15" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepartureDelayGroups]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DepartureDelayGroups" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DepTimeBlk]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DepTimeBlk" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[TaxiOut]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TaxiOut" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[WheelsOff]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="WheelsOff" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[WheelsOn]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="WheelsOn" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[TaxiIn]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TaxiIn" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CRSArrTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CRSArrTime" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrDelay]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ArrDelay" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrDel15]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ArrDel15" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrivalDelayGroups]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ArrivalDelayGroups" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ArrTimeBlk]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ArrTimeBlk" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DistanceGroup]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DistanceGroup" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[DivAirportLandings]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DivAirportLandings" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
+              endId="Package\Tarea Flujo de datos\Destino de ADO NET.Inputs[Entrada de destino de ADO NET]"
+              name="Salida de origen de archivo plano"
+              startId="Package\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{F43C46EB-E1B2-4739-91F9-CF3BE9C8133B}"
+      DTS:From="Package\Tarea Ejecutar SQL"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Tarea Flujo de datos" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Tarea Ejecutar SQL"
+          TopLeft="116.666660292281,30.3333331223991" />
+        <NodeLayout
+          Size="173.6,41.6"
+          Id="Package\Tarea Flujo de datos"
+          TopLeft="114.166660428875,136.066665720476" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="201.416660360578,71.9333331223991">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,64.1333325980769"
+              Start="0,0"
+              End="0,56.6333325980769">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.6333325980769" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Tarea Flujo de datos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="188.8,41.6"
+          Id="Package\Tarea Flujo de datos\Origen de archivo plano"
+          TopLeft="94.999994809429,41.5999997107188" />
+        <NodeLayout
+          Size="176.8,41.6"
+          Id="Package\Tarea Flujo de datos\Destino de ADO NET"
+          TopLeft="258.333319218623,188.066665358875" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
+          TopLeft="189.399994809429,83.1999997107188">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="157.333324409194,104.866665648156"
+              Start="0,0"
+              End="157.333324409194,97.3666656481558">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.4333328240779" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,48.4333328240779"
+                    Point2="0,52.4333328240779"
+                    Point3="4,52.4333328240779" />
+                  <mssgle:LineSegment
+                    End="153.333324409194,52.4333328240779" />
+                  <mssgle:CubicBezierSegment
+                    Point1="153.333324409194,52.4333328240779"
+                    Point2="157.333324409194,52.4333328240779"
+                    Point3="157.333324409194,56.4333328240779" />
+                  <mssgle:LineSegment
+                    End="157.333324409194,97.3666656481558" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Destino de ADO NET">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
