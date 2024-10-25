@@ -15,7 +15,6 @@ El modelo dimensional del DW se basa en la granularidad de un vuelo específico,
    - **Fact_Vuelo**: Contiene los detalles de cada vuelo, incluyendo retrasos, cancelaciones y desvíos, además de los IDs de referencia para las dimensiones **DimFecha**, **DimAeropuertoOrigen** y **DimAeropuertoDestino**.
 
 ### 3. Métricas Calculadas
-   - **Número de Vuelos Exitosos**: Conteo de vuelos sin incidencias.
    - **Vuelos Cancelados**: Conteo de vuelos con el campo `Cancelled` marcado.
    - **Vuelos Atrasados**: Conteo de vuelos con valores en `DepDelayMinutes` o `ArrDelayMinutes`.
    - **Vuelos Diferidos**: Conteo de vuelos con el campo `Diverted` marcado.
