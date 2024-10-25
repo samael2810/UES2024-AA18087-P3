@@ -2,6 +2,7 @@
 
 ## Descripción General
 Este proyecto consiste en el diseño e implementación de un Data Warehouse (DW) para la empresa aeronáutica **Para Volar**, con el objetivo de analizar y optimizar sus operaciones de vuelos a través del sistema **Gamatron**. El DW permitirá obtener información sobre vuelos cancelados, retrasados y desviados, así como analizar las causas de estas incidencias, proporcionando a la empresa una visión clara y rápida de su rendimiento y eficiencia operativa.
+> **Nota Importante**: Por favor, revisa el archivo PDF **DW2024-AA18087** ubicado en la raíz del proyecto. Este documento contiene información esencial sobre la estructura y el propósito del Data Warehouse, así como detalles adicionales importantes para comprender el proyecto en su totalidad.
 
 ## Estructura del Proyecto
 El modelo dimensional del DW se basa en la granularidad de un vuelo específico, con dimensiones relacionadas con el tiempo y aeropuertos de origen y destino, así como una fact table que almacena datos de vuelos y sus incidencias.
