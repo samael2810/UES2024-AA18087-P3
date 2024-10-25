@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">LAPTOP-KKRRMEHH</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZ4kVK6Ad7U6gei78DlSPSQAAAAACAAAAAAAQZgAAAAEAACAAAAD6Jw0kr18Jye1qPU8RpTnSfur9H2FtNyRZdRIT92He8AAAAAAOgAAAAAIAACAAAABAXjf/uLrvkx4tI9E2DrHjZJkIVRtnnQOw18mW/SBw4pAAAADSdj52u7/3haxsZKFHKJ1W3zOk54rCZCPMoxY4dGFlhs5I3IbBz6+SXALM5gwUyGzeSaMTEwTuSXvyqYZ7XDj+zZj3CmZ1eqNFZD17NNOaY+FVtXDw9BzyiDtB9q8S+gmk+HmlOvcwUIz4Uco6fwDxnWFU2uVLoUJ9yu1pbayAMYBUjrisk1gUY8ReBQBZWRRAAAAATbFjOEwVVEudvmCT02a1GfTprpMYBeS2KW1JpA98US7chkg+2nIg8TFTEuM+Hg2+ZTH/XIdlAQTdFJf+MQtqqQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZ4kVK6Ad7U6gei78DlSPSQAAAAACAAAAAAAQZgAAAAEAACAAAAABi1u9Y40CrCxIg0sfOU+BMeX1YBIi2ftTAZo/WUXcFAAAAAAOgAAAAAIAACAAAAB0V1Swbz5qjy119lL0d7mh69rrXm0mK2BifwKNxjEDB5AAAAAamYGq4qX+KWYdvMCMQVnyQa8QdZkndDV+X3PVeXC9HDCumd3+6rToeddj+njUrMAdXNHsnKT11Fz9iv3lLqN50ftMJ1lr304eG+DEPRdjgqqn+EkrzKjtcALtLnLjHByDiqSXZMQw4XCEduVKNEFoq96UIHkASbLOIbDC1Uql8PlF8HSTRPI7OK80tdBUnQlAAAAA1qm74ifOFcwQRJNcZjurn+VtqswizENFwDZA805me1DSakDdHmuNFNTjXJS2g8zmucJV1oD+UNpD6FS0SmtImw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -3526,10 +3526,10 @@
                 <SSIS:Property SSIS:Name="Name">FactVuelo</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">71</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">83</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{DEC22A98-90E8-4AA4-8A71-D57CF75584D0}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{39F1C0B9-0438-4112-B768-808FA916D490}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -4001,7 +4001,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\Samael\source\data_raw\Combined_Flights_2020_reducido.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\Samael\source\data_raw\Combined_Flights_2020.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -4198,7 +4198,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\Samael\source\data_raw\Combined_Flights_2021_reducido.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\Samael\source\data_raw\Combined_Flights_2021.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -4395,7 +4395,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\Samael\source\data_raw\Combined_Flights_2022_reducido.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\Samael\source\data_raw\Combined_Flights_2022.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
